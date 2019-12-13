@@ -20,12 +20,7 @@ def radix_sort(array, base):
     return main_bin
 
 def find_max_depth(array):
-    m = 0
-    for i in array:
-        depth = len(str(i)) 
-        if depth > m:
-            m = depth 
-    return depth
+    return len(str(max(array)))
 
-listofnums = [34, 967, 123, 899245]
+listofnums = [34, 967, 19, 888]
 print(radix_sort(listofnums, 10))
